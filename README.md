@@ -20,7 +20,8 @@ class Home extends PureComponent {
 
 ## 当然 当你使用Decorator 修饰符的 你可能会遇到这样的报错
 
-    SyntaxError: C:UsersAdministratorDesktoptetestsrcapp.js: Support for the experimental syntax 'decorators-legacy' isn't currently enabled..
+    SyntaxError: C:UsersAdministratorDesktoptetestsrcapp.js: Support for the experimental syntax 'decorators-legacy' 
+    isn't currently enabled..
 
 ### 第一个解决方法：删除package.json中的babel配置，然后在.babelrc文件中的presets加上 react-app
 
