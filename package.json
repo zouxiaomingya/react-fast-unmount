@@ -1,0 +1,18 @@
+{
+  "name": "react-fast-unmount",
+  "version": "2.0.7",
+  "description": "this is react fast unmount",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zouxiaomingya"
+  },
+  "author": "amingming",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.6.3"
+  } 
+}
