@@ -1,7 +1,7 @@
-##关于使用 react-fast-unmount  npm包,下面是他的详细使用方法和介绍 
+#关于使用 react-fast-unmount  npm包,下面是他的详细使用方法和介绍 
     
-###说在前面，为什么需要这个包呢？
-####使用react组件时候在数据加载还没完成 或者执行一些类似onscroll方法 ，组件销毁时后还改变数据报错如下：
+##说在前面，为什么需要这个包呢？
+###使用react组件时候在数据加载还没完成 或者执行一些类似onscroll方法 ，组件销毁时后还改变数据报错如下：
    > Can't perform a React state update on an unmounted component. 
    > This is a no-op, but it indicates a memory leak in your application. 
    > To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
@@ -17,17 +17,12 @@ class Home extends PureComponent {
     ....
 }
 ```
-####当然 当你使用Decorator 修饰符的 你可能会遇到这样的报错
 
-    > SyntaxError: C:UsersAdministratorDesktoptetestsrcapp.js: Support for the experimental syntax 'decorators-legacy' isn't currently enabled (15:1):
-
-#####第一个解决方法：删除package.json中的babel配置，然后在.babelrc文件中的presets加上"react-app"
-```jsx
-####当然 当你使用Decorator 修饰符的 你可能会遇到这样的报错
+##当然 当你使用Decorator 修饰符的 你可能会遇到这样的报错
 
     > SyntaxError: C:UsersAdministratorDesktoptetestsrcapp.js: Support for the experimental syntax 'decorators-legacy' isn't currently enabled..
 
-#####第一个解决方法：删除package.json中的babel配置，然后在.babelrc文件中的presets加上"react-app"
+##第一个解决方法：删除package.json中的babel配置，然后在.babelrc文件中的presets加上 react-app
 
 ```jsx
 {
@@ -38,7 +33,7 @@ class Home extends PureComponent {
   ]
 }
 ```
-#####第二个解决方法：使用react-app-rewired，来扩充create-react-app配置（比上面的方法更好，使用方法参考
+###第二个解决方法：使用react-app-rewired，来扩充create-react-app配置（比上面的方法更好，使用方法参考
 ```jsx
 //配置文件   config-overrides.js
 
@@ -49,6 +44,7 @@ module.exports = function override(config, env) {
     return config;
 };
 ```
+
 [Learn how to use Decorator in your own project ,please refer to..](https://reactjs.org/docs/getting-started.html).
 
 
