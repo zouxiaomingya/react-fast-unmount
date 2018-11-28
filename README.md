@@ -22,7 +22,7 @@ class Home extends PureComponent {
 
     > SyntaxError: C:UsersAdministratorDesktoptetestsrcapp.js: Support for the experimental syntax 'decorators-legacy' isn't currently enabled..
 
-## 第一个解决方法：删除package.json中的babel配置，然后在.babelrc文件中的presets加上 react-app
+### 第一个解决方法：删除package.json中的babel配置，然后在.babelrc文件中的presets加上 react-app
 
 ```jsx
 {
@@ -45,7 +45,7 @@ module.exports = function override(config, env) {
 };
 ```
 
-[Learn how to use Decorator in your own project ,please refer to..](https://reactjs.org/docs/getting-started.html).
+[Learn how to use Decorator in your own project ,please refer to..](https://blog.csdn.net/qq_37860930/article/details/80690838).
 
 
 
